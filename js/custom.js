@@ -5948,7 +5948,6 @@ $(function () {
       } else {
         $(".steps ul").removeClass("step-3");
       }
-
       if (newIndex === 3) {
         $(".steps ul").addClass("step-4");
         $(".actions ul").addClass("step-last");
@@ -5983,3 +5982,15 @@ $(function () {
     $(this).addClass("active");
   });
 });
+
+// modal screen
+if (document.cookie.indexOf("modal_shown=") >= 0) {
+  //do nothing if modal_shown cookie is present
+} else {
+  //show modal pop up
+  $("#exampleModal").modal({
+    show: true,
+  });
+  document.cookie = "modal_shown=seen"; //set cookie modal_shown
+  //cookie will expire when browser is closed
+}
