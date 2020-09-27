@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/favicon.png" type="image/ico" />
+
+    <title>Educate Myanmar</title>
+    <!-- Bootstrap -->
+    <link
+      href="vendors/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="vendors/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap-progressbar -->
+    <link
+      href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body class="nav-lg">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="p-4 mb-0 custom-inner-thankicon">
+              <img src="images/welcome.png" />
+              <h6 class="font-weight-normal pt-4 pb-2">
+                We're excited to have you join over 1 million teachers using
+                Educate Myanmar.
+              </h6>
+              <button
+                type="button"
+                class="btn btn-sm btn-outline-success"
+                data-dismiss="modal"
+              >
+                <h5 class="font-weight-bold pt-2">Let's get started</h5>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container body">
+      <div class="main_container">
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <div class="navbar nav_title" style="border: 0">
+              <a href="index.html" class="site_title"
+                ><img src="images/ED-logo.png" alt="..."
+              /></a>
+            </div>
+            <nav class="nav navbar-nav">
+              <ul class="navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px">
+                  <a
+                    href="javascript:;"
+                    class="user-profile dropdown-toggle"
+                    aria-haspopup="true"
+                    id="navbarDropdown"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="images/user.jpg" alt="" />User Name</a
+                  >
+                  <div
+                    class="dropdown-menu dropdown-usermenu pull-right"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a class="dropdown-item" href="section-instructor.html"
+                      >My courses</a
+                    >
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa fa-sign-out"></i> Log Out</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown" style="padding-left: 15px">
+                  <a
+                    href="javascript:;"
+                    class="notification"
+                    aria-haspopup="true"
+                    id="navbarDropdown"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa fa-bell-o"></i
+                  ></a>
+                  <div
+                    class="dropdown-menu dropdown-usermenu pull-right"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a class="dropdown-item" href="#"> My courses</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- page content -->
+        <section class="right_col pb-5" role="main">
+          <div class="clearfix"></div>
+          <!-- survey form -->
+          <div class="row pt-5">
+            <div class="col-md-12">
+              <div id="custom-survey" class="wrapper card p-4">
+                <div class="card-body mt-4">
+                  <form action="">
+                    <div id="wizard">
+                      <!-- SECTION 1 -->
+                      <h4></h4>
+                      <section>
+                        <div class="row">
+                          <div class="col-md-5 teacher-syk">
+                            <img
+                              class="custom-borderradious"
+                              src="images/course-bg.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-7 p-3">
+                            <h3 class="font-weight-bold pb-2 text-success mt-0">
+                              Share your knowledge
+                            </h3>
+                            <p>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of
+                              type and scrambled it to make a type specimen
+                              book. It has survived not only five centuries, but
+                              also the leap into electronic typesetting,
+                              remaining essentially unchanged.
+                            </p>
+                            <h5 class="font-weight-bold pt-4">
+                              What kind of teaching have you done before?
+                            </h5>
+                            <div class="pt-4">
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio1"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio1"
+                                  >In person, informally</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio2"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio2"
+                                  >In person, professionally</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio3"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio3"
+                                  >Online</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio4"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio4"
+                                  >Other</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SECTION 2 -->
+                      <h4></h4>
+                      <section>
+                        <div class="row">
+                          <div class="col-md-5 teacher-syk">
+                            <img
+                              class="custom-borderradious"
+                              src="images/create-course.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-7 p-3">
+                            <h3 class="font-weight-bold pb-2 text-success mt-0">
+                              Create a course
+                            </h3>
+                            <p>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of
+                              type and scrambled it to make a type specimen
+                              book. It has survived not only five centuries, but
+                              also the leap into electronic typesetting,
+                              remaining essentially unchanged.
+                            </p>
+                            <h5 class="font-weight-bold pt-4">
+                              How much of a video "pro" are you?
+                            </h5>
+                            <div class="pt-4">
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio5"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio5"
+                                  >I'm a beginner</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio6"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio6"
+                                  >I have some knowledge</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio7"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio7"
+                                  >I'm experienced</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio8"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio8"
+                                  >I have videos ready to upload</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      <!-- SECTION 3 -->
+                      <h4></h4>
+                      <section>
+                        <div class="row">
+                          <div class="col-md-5 teacher-syk">
+                            <img
+                              class="custom-borderradious"
+                              src="images/expand-reach.jpg"
+                              alt=""
+                            />
+                          </div>
+                          <div class="col-md-7 p-3">
+                            <h3 class="font-weight-bold pb-2 text-success mt-0">
+                              Expand your reach
+                            </h3>
+                            <p>
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s, when an unknown printer took a galley of
+                              type and scrambled it to make a type specimen
+                              book. It has survived not only five centuries, but
+                              also the leap into electronic typesetting,
+                              remaining essentially unchanged.
+                            </p>
+                            <h5 class="font-weight-bold pt-4">
+                              Do you have an audience to share your course with?
+                            </h5>
+                            <div class="pt-4">
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio9"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio9"
+                                  >Not at the moment</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio0"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio0"
+                                  >I have a small following</label
+                                >
+                              </div>
+                              <div class="custom-control custom-radio pb-2">
+                                <input
+                                  type="radio"
+                                  id="customRadio11"
+                                  name="customRadio"
+                                  class="custom-control-input"
+                                />
+                                <label
+                                  class="custom-control-label"
+                                  for="customRadio11"
+                                  >I have a sizeable following</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content custom-sharecourse">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                  Share this course
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center share-social pt-5 pb-5">
+                <a href="#"
+                  ><i class="fa fa-facebook-square"></i>&nbsp; Facebook</a
+                >&nbsp;
+                <a href="#"><i class="fa fa-instagram"></i>&nbsp; Instagram</a
+                >&nbsp;
+                <a href="#"><i class="fa fa-linkedin"></i>&nbsp; Linkedin</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer content -->
+        <footer>
+          <div class="text-left vod-footer">
+            Copyright © 2020 Educate Myanmar. All rights reserved.
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

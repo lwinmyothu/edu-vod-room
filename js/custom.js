@@ -108,7 +108,7 @@ function init_sidebar() {
         .addClass("active-sm")
         .removeClass("active");
     } else {
-      $SIDEBAR_MENU.find("li.active-sm ul").show();
+      $SIDEBAR_MENU.find("li.active-sm ul").hide();
       $SIDEBAR_MENU
         .find("li.active-sm")
         .addClass("active")
@@ -5929,60 +5929,6 @@ $(document).ready(function () {
   init_autosize();
   init_autocomplete();
 });
-// survey form
-$(function () {
-  $("#wizard").steps({
-    headerTag: "h4",
-    bodyTag: "section",
-    transitionEffect: "fade",
-    enableAllSteps: true,
-    transitionEffectSpeed: 500,
-    onStepChanging: function (event, currentIndex, newIndex) {
-      if (newIndex === 1) {
-        $(".steps ul").addClass("step-2");
-      } else {
-        $(".steps ul").removeClass("step-2");
-      }
-      if (newIndex === 2) {
-        $(".steps ul").addClass("step-3");
-      } else {
-        $(".steps ul").removeClass("step-3");
-      }
-      if (newIndex === 3) {
-        $(".steps ul").addClass("step-4");
-        $(".actions ul").addClass("step-last");
-      } else {
-        $(".steps ul").removeClass("step-4");
-        $(".actions ul").removeClass("step-last");
-      }
-      return true;
-    },
-    labels: {
-      finish: "Continue",
-      next: "Continue",
-      previous: "Previous",
-    },
-  });
-  // Custom Steps Jquery Steps
-  $(".wizard > .steps li a").click(function () {
-    $(this).parent().addClass("checked");
-    $(this).parent().prevAll().addClass("checked");
-    $(this).parent().nextAll().removeClass("checked");
-  });
-  // Custom Button Jquery Steps
-  $(".forward").click(function () {
-    $("#wizard").steps("next");
-  });
-  $(".backward").click(function () {
-    $("#wizard").steps("previous");
-  });
-  // Checkbox
-  $(".checkbox-circle label").click(function () {
-    $(".checkbox-circle label").removeClass("active");
-    $(this).addClass("active");
-  });
-});
-
 // modal screen
 if (document.cookie.indexOf("modal_shown=") >= 0) {
   //do nothing if modal_shown cookie is present
@@ -5993,4 +5939,160 @@ if (document.cookie.indexOf("modal_shown=") >= 0) {
   });
   document.cookie = "modal_shown=seen"; //set cookie modal_shown
   //cookie will expire when browser is closed
+}
+// active according
+$("#headingOne a").click(function () {
+  $("#headingOne a").removeClass("active-trandiss");
+  $(this).addClass("active-trandiss");
+
+  $("#headingTwo a").removeClass("active-trandiss");
+  $(this).addClass("active-trandiss");
+});
+
+$("#headingTwo a").click(function () {
+  $("#headingTwo a").removeClass("active-trandiss");
+  $(this).addClass("active-trandiss");
+
+  $("#headingOne a").removeClass("active-trandiss");
+  $(this).addClass("active-trandiss");
+});
+
+// pop quizzes
+$(document).ready(function () {
+  var current_fs, next_fs, previous_fs;
+
+  // No BACK button on first screen
+  if ($(".show").hasClass("first-screen")) {
+    $(".prev").css({ display: "none" });
+  }
+
+  // Next button
+  $(".next-button").click(function () {
+    current_fs = $(this).parent().parent();
+    next_fs = $(this).parent().parent().next();
+
+    $(".prev").css({ display: "block" });
+
+    $(current_fs).removeClass("show");
+    $(next_fs).addClass("show");
+
+    $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+    current_fs.animate(
+      {},
+      {
+        step: function () {
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+
+          next_fs.css({
+            display: "block",
+          });
+        },
+      }
+    );
+  });
+
+  // Previous button
+  $(".prev").click(function () {
+    current_fs = $(".show");
+    previous_fs = $(".show").prev();
+
+    $(current_fs).removeClass("show");
+    $(previous_fs).addClass("show");
+
+    $(".prev").css({ display: "block" });
+
+    if ($(".show").hasClass("first-screen")) {
+      $(".prev").css({ display: "none" });
+    }
+
+    $("#progressbar li")
+      .eq($(".card2").index(current_fs))
+      .removeClass("active");
+
+    current_fs.animate(
+      {},
+      {
+        step: function () {
+          current_fs.css({
+            display: "none",
+            position: "relative",
+          });
+
+          previous_fs.css({
+            display: "block",
+          });
+        },
+      }
+    );
+  });
+});
+
+// for pop-quizzes
+var currentTab = 0;
+document.addEventListener("DOMContentLoaded", function (event) {
+  showTab(currentTab);
+});
+
+function showTab(n) {
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == x.length - 1) {
+    document.getElementById("nextBtn").innerHTML = "Complete";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+  }
+  fixStepIndicator(n);
+}
+
+function nextPrev(n) {
+  var x = document.getElementsByClassName("tab");
+  if (n == 1 && !validateForm()) return false;
+  x[currentTab].style.display = "none";
+  currentTab = currentTab + n;
+  if (currentTab >= x.length) {
+    // document.getElementById("regForm").submit();
+    // return false;
+    //alert("sdf");
+    document.getElementById("nextprevious").style.display = "none";
+    document.getElementById("all-steps").style.display = "none";
+    document.getElementById("register").style.display = "none";
+    document.getElementById("text-message").style.display = "block";
+  }
+  showTab(currentTab);
+}
+
+function validateForm() {
+  var x,
+    y,
+    i,
+    valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  for (i = 0; i < y.length; i++) {
+    if (y[i].value == "") {
+      y[i].className += " invalid";
+      valid = false;
+    }
+  }
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid;
+}
+function fixStepIndicator(n) {
+  var i,
+    x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  x[n].className += " active";
 }

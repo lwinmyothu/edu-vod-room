@@ -28,45 +28,7 @@
     <link href="css/custom.css" rel="stylesheet" />
   </head>
 
-  <body class="nav-lg">
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog custom-modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body text-center">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="p-4 mb-0 custom-inner-thankicon">
-              <img src="images/welcome.png" />
-              <h6 class="font-weight-normal pt-4 pb-2">
-                We're excited to have you join over 1 million teachers using
-                Educate Myanmar.
-              </h6>
-              <button
-                type="button"
-                class="btn btn-sm btn-outline-success"
-                data-dismiss="modal"
-              >
-                <h5 class="font-weight-bold pt-2">Let's get started</h5>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <body class="nav-md">
     <div class="container body">
       <div class="main_container">
         <!-- top navigation -->
@@ -76,6 +38,9 @@
               <a href="index.html" class="site_title"
                 ><img src="images/ED-logo.png" alt="..."
               /></a>
+            </div>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
             </div>
             <nav class="nav navbar-nav">
               <ul class="navbar-right">
@@ -94,332 +59,943 @@
                     class="dropdown-menu dropdown-usermenu pull-right"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a class="dropdown-item" href="section-instructor.html"
-                      >My courses</a
+                    <a class="dropdown-item" href="section-instructor.html">
+                      My courses</a
                     >
-                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#"> Setting</a>
                     <a class="dropdown-item" href="#"
                       ><i class="fa fa-sign-out"></i> Log Out</a
                     >
-                  </div>
-                </li>
-                <li class="nav-item dropdown" style="padding-left: 15px">
-                  <a
-                    href="javascript:;"
-                    class="notification"
-                    aria-haspopup="true"
-                    id="navbarDropdown"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="fa fa-bell-o"></i
-                  ></a>
-                  <div
-                    class="dropdown-menu dropdown-usermenu pull-right"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <a class="dropdown-item" href="#"> My courses</a>
                   </div>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
-        <!-- page content -->
-        <section class="right_col pb-5" role="main">
-          <div class="clearfix"></div>
-          <!-- survey form -->
-          <div class="row pt-5">
-            <div class="col-md-12">
-              <div id="custom-survey" class="wrapper card p-4">
-                <div class="card-body mt-4">
-                  <form action="">
-                    <div id="wizard">
-                      <!-- SECTION 1 -->
-                      <h4></h4>
-                      <section>
-                        <div class="row">
-                          <div class="col-md-5 teacher-syk">
-                            <img
-                              class="custom-borderradious"
-                              src="images/course-bg.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-7 p-3">
-                            <h3 class="font-weight-bold pb-2 text-success mt-0">
-                              Share your knowledge
-                            </h3>
-                            <p>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since the
-                              1500s, when an unknown printer took a galley of
-                              type and scrambled it to make a type specimen
-                              book. It has survived not only five centuries, but
-                              also the leap into electronic typesetting,
-                              remaining essentially unchanged.
+
+        <!-- right sidebar menu -->
+        <div class="col-md-3 left_col">
+          <div class="left_col">
+            <div class="p-3">
+              <!-- progress bar -->
+              <div class="custom-pr progress mt-3">
+                <div
+                  class="progress-bar progress-bar-striped bg-success"
+                  role="progressbar"
+                  style="width: 25%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <h6 class="pt-2 pb-2 text-light">
+                25%
+                <span class="percentage-complete font-weight-normal"
+                  >complete</span
+                >
+              </h6>
+            </div>
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="wrapper center-block p-3">
+              <div
+                class="panel-group"
+                id="accordion"
+                role="tablist"
+                aria-multiselectable="true"
+              >
+                <!-- three -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="panel-title">
+                      <a
+                        role="button"
+                        class="btn btn-light"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse3"
+                        aria-expanded="true"
+                        aria-controls="collapse3"
+                      >
+                        1. Getting Started
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse3"
+                    class="panel-collapse collapse in"
+                    role="tabpanel"
+                    aria-labelledby="heading3"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
                             </p>
-                            <h5 class="font-weight-bold pt-4">
-                              What kind of teaching have you done before?
-                            </h5>
-                            <div class="pt-4">
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio1"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio1"
-                                  >In person, informally</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio2"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio2"
-                                  >In person, professionally</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio3"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio3"
-                                  >Online</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio4"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio4"
-                                  >Other</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <!-- SECTION 2 -->
-                      <h4></h4>
-                      <section>
-                        <div class="row">
-                          <div class="col-md-5 teacher-syk">
-                            <img
-                              class="custom-borderradious"
-                              src="images/create-course.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-7 p-3">
-                            <h3 class="font-weight-bold pb-2 text-success mt-0">
-                              Create a course
-                            </h3>
-                            <p>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since the
-                              1500s, when an unknown printer took a galley of
-                              type and scrambled it to make a type specimen
-                              book. It has survived not only five centuries, but
-                              also the leap into electronic typesetting,
-                              remaining essentially unchanged.
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
                             </p>
-                            <h5 class="font-weight-bold pt-4">
-                              How much of a video "pro" are you?
-                            </h5>
-                            <div class="pt-4">
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio5"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio5"
-                                  >I'm a beginner</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio6"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio6"
-                                  >I have some knowledge</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio7"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio7"
-                                  >I'm experienced</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio8"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio8"
-                                  >I have videos ready to upload</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                      <!-- SECTION 3 -->
-                      <h4></h4>
-                      <section>
-                        <div class="row">
-                          <div class="col-md-5 teacher-syk">
-                            <img
-                              class="custom-borderradious"
-                              src="images/expand-reach.jpg"
-                              alt=""
-                            />
-                          </div>
-                          <div class="col-md-7 p-3">
-                            <h3 class="font-weight-bold pb-2 text-success mt-0">
-                              Expand your reach
-                            </h3>
-                            <p>
-                              Lorem Ipsum is simply dummy text of the printing
-                              and typesetting industry. Lorem Ipsum has been the
-                              industry's standard dummy text ever since the
-                              1500s, when an unknown printer took a galley of
-                              type and scrambled it to make a type specimen
-                              book. It has survived not only five centuries, but
-                              also the leap into electronic typesetting,
-                              remaining essentially unchanged.
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
                             </p>
-                            <h5 class="font-weight-bold pt-4">
-                              Do you have an audience to share your course with?
-                            </h5>
-                            <div class="pt-4">
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio9"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio9"
-                                  >Not at the moment</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio0"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio0"
-                                  >I have a small following</label
-                                >
-                              </div>
-                              <div class="custom-control custom-radio pb-2">
-                                <input
-                                  type="radio"
-                                  id="customRadio11"
-                                  name="customRadio"
-                                  class="custom-control-input"
-                                />
-                                <label
-                                  class="custom-control-label"
-                                  for="customRadio11"
-                                  >I have a sizeable following</label
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
+                          </a>
+                        </h6>
+                      </div>
                     </div>
-                  </form>
+                  </div>
+                </div>
+                <!-- four -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading4">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapse4"
+                      >
+                        2. A brief history of digital marketing
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse4"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading4"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- five -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading5">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse5"
+                        aria-expanded="false"
+                        aria-controls="collapse5"
+                      >
+                        3. Corporate strategy and its relationship to sales and
+                        marketing
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse5"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading5"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- six -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading6">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse6"
+                        aria-expanded="false"
+                        aria-controls="collapse6"
+                      >
+                        6. Digital marketing overview
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse6"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading6"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- seven -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading7">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse7"
+                        aria-expanded="false"
+                        aria-controls="collapse7"
+                      >
+                        7. Understand and evaluate digital marketing channels
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse7"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading7"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- eight -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading8">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse8"
+                        aria-expanded="false"
+                        aria-controls="collapse8"
+                      >
+                        8. Understand available digital marketing channels
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse8"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading8"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- nine -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading9">
+                    <h4 class="panel-title">
+                      <a
+                        class="collapsed btn btn-light"
+                        role="button"
+                        data-toggle="collapse"
+                        data-parent="#accordion"
+                        href="#collapse9"
+                        aria-expanded="false"
+                        aria-controls="collapse9"
+                      >
+                        9. Understand available digital marketing channels
+                        <p class="font-weight-normal mb-0 pt-2">
+                          <i class="fa fa-book"></i>&nbsp;Material - 0 / 7
+                        </p>
+                      </a>
+                    </h4>
+                  </div>
+                  <div
+                    id="collapse9"
+                    class="panel-collapse collapse"
+                    role="tabpanel"
+                    aria-labelledby="heading9"
+                  >
+                    <div class="panel-body">
+                      <div class="card1 pt-3">
+                        <ul id="progressbar" class="text-center">
+                          <li class="active step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                          <li class="step0"></li>
+                        </ul>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Learning with video
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Review of PDF
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-pdf-o"></i
+                                >&nbsp;&nbsp;PDF</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            For pop-quizzes
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-file-text-o"></i>&nbsp;&nbsp;3
+                                Questions</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                        <h6 class="mb-4">
+                          <a href="#" class="text-light">
+                            Testing
+                            <p class="pt-2">
+                              <span class="time-block"
+                                ><i class="fa fa-clock-o"></i
+                                >&nbsp;&nbsp;3:50</span
+                              >
+                            </p>
+                          </a>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content custom-sharecourse">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">
-                  Share this course
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center share-social pt-5 pb-5">
-                <a href="#"
-                  ><i class="fa fa-facebook-square"></i>&nbsp; Facebook</a
-                >&nbsp;
-                <a href="#"><i class="fa fa-instagram"></i>&nbsp; Instagram</a
-                >&nbsp;
-                <a href="#"><i class="fa fa-linkedin"></i>&nbsp; Linkedin</a>
+        <!-- page content -->
+        <section class="right_col pb-5" role="main">
+          <div class="clearfix"></div>
+          <div class="row pt-4 pb-3">
+            <div class="col-md-12 text-left">
+              <a href="#" alt="" download
+                ><i class="fa fa-angle-left font-weight-bold"></i>&nbsp;&nbsp;Go
+                to my courses</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card card0 p-3">
+                <div class="card00">
+                  <!-- video -->
+                  <div class="card2 first-screen show">
+                    <div class="row px-3 mt-3">
+                        <h5 class="font-weight-bold text-dark pb-2">
+                          Learning with video
+                        </h5>
+                        <iframe width="100%" height="569" src="https://www.youtube.com/embed/wZZnxXyES80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="row pt-2">
+                      <button
+                        class="next-button text-center border-0"
+                        type="button"
+                      >
+                        <span class="fa fa-arrow-right"></span>&nbsp;Continue
+                      </button>
+                      <p class="prev text-dark"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
+                    </div>
+                  </div>
+                  <!--pdf  -->
+                  <div class="card2">
+                    <div class="row px-3 mt-3">
+                        <h5 class="font-weight-bold text-dark pb-2">
+                        Review of PDF
+                        </h5>
+                        <iframe
+                          width="100%"
+                          height="569"
+                          src="images/tourism.pdf"
+                          frameborder="0"
+                          allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="pt-2">
+                      <button
+                        class="next-button text-center border-0"
+                        type="button"
+                      >
+                        <span class="fa fa-arrow-right"></span>&nbsp;Continue
+                      </button>
+                      <p class="prev text-dark"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
+                    </div>
+                  </div>
+                  <!-- For pop-quizzes -->
+                  <div class="card2">
+                    <div class="row px-3 mt-3">
+                      <h5 class="font-weight-bold text-dark pb-2">
+                        For pop-quizzes
+                        </h5>
+                      <div class="container">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-12">
+                                <form id="regForm">
+                                    <h1 id="register"></h1>
+                                    <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
+                                    <div class="tab">
+                                      <h4 class="font-weight-bold pb-2">
+                                        Are you familiar with any digital learning games?
+                                      </h4>
+                                      <div class="form-row pt-4">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline2">No</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="tab">
+                                      <h4 class="font-weight-bold pb-2">
+                                        How familiar are you with digital learning games?
+                                      </h4>
+                                      <div class="form-row pt-4">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline1">1</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline2">2</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                          <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                          <label class="custom-control-label" for="customRadioInline3">3</label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="tab">
+                                      <h4 class="font-weight-bold pb-2">
+                                        Why are you or why aren't you interested in using
+                                        digital learning games in your e-learning courses?
+                                      </h4>
+                                      <textarea name="" id="" class="form-control" style="height: 108px"></textarea>
+                                    </div>
+                                    <div class="tab">
+                                      <h4 class="font-weight-bold pb-2">
+                                        What is Lorem Ipsum?
+                                      </h4>
+                                      <textarea name="" id="" class="form-control" style="height: 108px"></textarea>
+                                    </div>
+                                    <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                                        <h4>Thanks for your information!</h4> <span>Your information has been saved!</span>
+                                    </div>
+                                    <div style="overflow:auto;" id="nextprevious" class="pt-3 pr-0">
+                                        <div style="float:right;"> <button type="button" id="prevBtn" class="btn btn-outline-secondary" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" class="btn btn-success" onclick="nextPrev(1)">Next</button> </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <!-- Transcript Disscussion -->
+          <div class="accordion mt-2" id="accordionExample">
+            <div class="row pb-2">
+              <div class="col-md-2">
+                <div id="headingOne">
+                  <a
+                    class="btn btn-block btn-outline-secondary font-weight-bold"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <i class="fa fa-file-text-o"></i>&nbsp;Transcript
+                  </a>
+                </div>
+              </div>
+              <div class="offset-md-7 col-md-3 text-right">
+                <div id="headingTwo">
+                  <a
+                    class="btn btn-outline-secondary font-weight-bold"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    <i class="fa fa-comments-o"></i>&nbsp;Discussion&nbsp;<span
+                      class="badge badge-warning"
+                      >25</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="collapseOne"
+              class="collapse"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="row pt-0">
+                <div class="col-md-12">
+                  <!-- about course -->
+                  <div class="card custom-rounded mt-3 p-3">
+                    <div class="card-body">
+                      <h5>About this course</h5>
+                      <hr />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- course objective -->
+                  <div class="card custom-rounded mt-3 p-3">
+                    <div class="card-body">
+                      <h5>Course objective</h5>
+                      <hr />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- agenda -->
+                  <div class="card custom-rounded mt-3 p-3">
+                    <div class="card-body">
+                      <h5>Agenda</h5>
+                      <hr />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- teacher -->
+                  <div class="card custom-rounded mt-3 p-3">
+                    <div class="card-body">
+                      <h5>Teacher</h5>
+                      <hr />
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of
+                        Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div
+                class="x_panel custom-rounded pl-4 pr-4 pt-2 pb-2 mt-4 custom-createnote"
+              >
+                <div class="x_content">
+                  <form id="demo-form" data-parsley-validate="" novalidate="">
+                    <label for="fullname">Title *:</label>
+                    <input
+                      type="text"
+                      id="fullname"
+                      class="form-control mb-2"
+                      name="fullname"
+                      required=""
+                    />
+                    <label for="message"
+                      >Write a message (20 chars min, 1000 max) :</label
+                    >
+                    <textarea
+                      id="message"
+                      required="required"
+                      class="form-control"
+                      name="message"
+                      data-parsley-trigger="keyup"
+                      data-parsley-minlength="20"
+                      data-parsley-maxlength="100"
+                      data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+                      data-parsley-validation-threshold="10"
+                    ></textarea>
+                    <div class="col-md-12 pt-3 pl-0">
+                      <button class="btn btn-outline-secondary" type="button">
+                        Cancel
+                      </button>
+                      <button type="submit" class="btn btn-success">
+                        Save
+                      </button>
+                    </div>
+                  </form>
+                  <hr />
+                  <ul class="list-unstyled msg_list">
+                    <li>
+                      <a>
+                        <span class="image">
+                          <img src="images/user.jpg" alt="img" />
+                        </span>
+                        <span>
+                          <span class="font-weight-bold pb-2">John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie
+                          makers. They were where you met the producers that
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+        </section>
+
         <!-- footer content -->
         <footer>
           <div class="text-left vod-footer">
@@ -435,8 +1011,6 @@
     <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- bootstrap-progressbar -->
     <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-    <!-- stepper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="js/custom.js"></script>
   </body>
