@@ -45,6 +45,9 @@
             <nav class="nav navbar-nav">
               <ul class="navbar-right">
                 <li class="nav-item dropdown open" style="padding-left: 15px">
+                  <a href="#" alt="" 
+                    ><i class="fa fa-angle-double-left"></i>&nbsp;&nbsp;Go
+                    to my courses</a>&nbsp;&nbsp;
                   <a
                     href="javascript:;"
                     class="user-profile dropdown-toggle"
@@ -137,7 +140,7 @@
                           <li class="step0"></li>
                         </ul>
                         <h6 class="mb-4">
-                          <a href="#" class="text-light">
+                          <a href="#learningwithvideo" class="text-light">
                             Learning with video
                             <p class="pt-2">
                               <span class="time-block"
@@ -148,7 +151,7 @@
                           </a>
                         </h6>
                         <h6 class="mb-4">
-                          <a href="#" class="text-light">
+                          <a href="#reviewofpdf" class="text-light">
                             Review of PDF
                             <p class="pt-2">
                               <span class="time-block"
@@ -159,7 +162,7 @@
                           </a>
                         </h6>
                         <h6 class="mb-4">
-                          <a href="#" class="text-light">
+                          <a href="#popquizzes" class="text-light">
                             For pop-quizzes
                             <p class="pt-2">
                               <span class="time-block"
@@ -672,131 +675,238 @@
         </div>
 
         <!-- page content -->
-        <section class="right_col pb-5" role="main">
+        <section class="right_col pb-5 masthead" role="main">
           <div class="clearfix"></div>
-          <div class="row pt-4 pb-3">
-            <div class="col-md-12 text-left">
-              <a href="#" alt="" download
-                ><i class="fa fa-angle-left font-weight-bold"></i>&nbsp;&nbsp;Go
-                to my courses</a
-              >
-            </div>
-          </div>
           <div class="row">
             <div class="col-md-12">
-              <div class="card card0 p-3">
+              <div class="card card0 p-3 mt-4">
                 <div class="card00">
                   <!-- video -->
-                  <div class="card2 first-screen show">
-                    <div class="row px-3 mt-3">
-                        <h5 class="font-weight-bold text-dark pb-2">
-                          Learning with video
-                        </h5>
-                        <iframe width="100%" height="569" src="https://www.youtube.com/embed/wZZnxXyES80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                  <div id="learningwithvideo" class="card2 first-screen show">
+                    <div class="row px-3">
+                      <h5 class="font-weight-bold text-dark pb-2">
+                        Learning with video
+                      </h5>
+                      <iframe
+                        width="100%"
+                        height="450"
+                        src="https://www.youtube.com/embed/wZZnxXyES80"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen=""
+                      ></iframe>
                     </div>
-                    <div class="row pt-2">
+                    <div class="row pt-2 pl-3 pr-3">
                       <button
-                        class="next-button text-center border-0"
+                        class="next-button text-center border-0 p-0 m-0"
                         type="button"
                       >
-                        <span class="fa fa-arrow-right"></span>&nbsp;Continue
+                        <span class="fa fa-arrow-right"></span>&nbsp;Mark in Complete
                       </button>
                       <p class="prev text-dark"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
                     </div>
                   </div>
                   <!--pdf  -->
-                  <div class="card2">
-                    <div class="row px-3 mt-3">
-                        <h5 class="font-weight-bold text-dark pb-2">
+                  <div id="reviewofpdf" class="card2 ">
+                    <div class="row px-3">
+                      <h5 class="font-weight-bold text-dark pb-2">
                         Review of PDF
-                        </h5>
-                        <iframe
-                          width="100%"
-                          height="569"
-                          src="images/tourism.pdf"
-                          frameborder="0"
-                          allowfullscreen
-                        ></iframe>
+                      </h5>
+                      <iframe
+                        width="100%"
+                        height="450"
+                        src="images/tourism.pdf"
+                        frameborder="0"
+                        allowfullscreen
+                      ></iframe>
                     </div>
-                    <div class="pt-2">
+                    <div class="row pt-2 pl-3 pr-3">
                       <button
-                        class="next-button text-center border-0"
+                        class="next-button text-center border-0 p-0 m-0"
                         type="button"
                       >
-                        <span class="fa fa-arrow-right"></span>&nbsp;Continue
+                        <span class="fa fa-arrow-right"></span>&nbsp;Mark in Complete
                       </button>
                       <p class="prev text-dark"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
                     </div>
                   </div>
                   <!-- For pop-quizzes -->
-                  <div class="card2">
-                    <div class="row px-3 mt-3">
+                  <div id="popquizzes" class="card2">
+                    <div class="row px-3">
                       <h5 class="font-weight-bold text-dark pb-2">
                         For pop-quizzes
-                        </h5>
+                      </h5>
                       <div class="container">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-md-12">
-                                <form id="regForm">
-                                    <h1 id="register"></h1>
-                                    <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
-                                    <div class="tab">
-                                      <h4 class="font-weight-bold pb-2">
-                                        Are you familiar with any digital learning games?
-                                      </h4>
-                                      <div class="form-row pt-4">
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadioInline1">Yes</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadioInline2">No</label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="tab">
-                                      <h4 class="font-weight-bold pb-2">
-                                        How familiar are you with digital learning games?
-                                      </h4>
-                                      <div class="form-row pt-4">
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadioInline1">1</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadioInline2">2</label>
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                          <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                                          <label class="custom-control-label" for="customRadioInline3">3</label>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="tab">
-                                      <h4 class="font-weight-bold pb-2">
-                                        Why are you or why aren't you interested in using
-                                        digital learning games in your e-learning courses?
-                                      </h4>
-                                      <textarea name="" id="" class="form-control" style="height: 108px"></textarea>
-                                    </div>
-                                    <div class="tab">
-                                      <h4 class="font-weight-bold pb-2">
-                                        What is Lorem Ipsum?
-                                      </h4>
-                                      <textarea name="" id="" class="form-control" style="height: 108px"></textarea>
-                                    </div>
-                                    <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
-                                        <h4>Thanks for your information!</h4> <span>Your information has been saved!</span>
-                                    </div>
-                                    <div style="overflow:auto;" id="nextprevious" class="pt-3 pr-0">
-                                        <div style="float:right;"> <button type="button" id="prevBtn" class="btn btn-outline-secondary" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" class="btn btn-success" onclick="nextPrev(1)">Next</button> </div>
-                                    </div>
-                                </form>
-                            </div>
+                        <div
+                          class="row d-flex justify-content-center align-items-center"
+                        >
+                          <div class="col-md-12">
+                            <form id="regForm">
+                              <h1 id="register"></h1>
+                              <div class="all-steps" id="all-steps">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                              </div>
+                              <div class="tab">
+                                <h4 class="font-weight-bold pb-2">
+                                  Are you familiar with any digital learning
+                                  games?
+                                </h4>
+                                <div class="form-row pt-4">
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="customRadioInline1"
+                                      name="customRadioInline1"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customRadioInline1"
+                                      >Yes</label
+                                    >
+                                  </div>
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="customRadioInline2"
+                                      name="customRadioInline1"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customRadioInline2"
+                                      >No</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab">
+                                <h4 class="font-weight-bold pb-2">
+                                  How familiar are you with digital learning
+                                  games?
+                                </h4>
+                                <div class="form-row pt-4">
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="customRadioInline1"
+                                      name="customRadioInline1"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customRadioInline1"
+                                      >1</label
+                                    >
+                                  </div>
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="customRadioInline2"
+                                      name="customRadioInline1"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customRadioInline2"
+                                      >2</label
+                                    >
+                                  </div>
+                                  <div
+                                    class="custom-control custom-radio custom-control-inline"
+                                  >
+                                    <input
+                                      type="radio"
+                                      id="customRadioInline3"
+                                      name="customRadioInline1"
+                                      class="custom-control-input"
+                                    />
+                                    <label
+                                      class="custom-control-label"
+                                      for="customRadioInline3"
+                                      >3</label
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab">
+                                <h4 class="font-weight-bold pb-2">
+                                  Why are you or why aren't you interested in
+                                  using digital learning games in your
+                                  e-learning courses?
+                                </h4>
+                                <textarea
+                                  name=""
+                                  id=""
+                                  class="form-control"
+                                  style="height: 108px"
+                                ></textarea>
+                              </div>
+                              <div class="tab">
+                                <h4 class="font-weight-bold pb-2">
+                                  What is Lorem Ipsum?
+                                </h4>
+                                <textarea
+                                  name=""
+                                  id=""
+                                  class="form-control"
+                                  style="height: 108px"
+                                ></textarea>
+                              </div>
+                              <div
+                                class="thanks-message text-center"
+                                id="text-message"
+                              >
+                                <img
+                                  src="https://i.imgur.com/O18mJ1K.png"
+                                  width="100"
+                                  class="mb-4"
+                                />
+                                <h4>Thanks for your information!</h4>
+                                <span>Your information has been saved!</span>
+                              </div>
+                              <div
+                                style="overflow: auto"
+                                id="nextprevious"
+                                class="pt-3 pr-0"
+                              >
+                                <div style="float: right">
+                                  <button
+                                    type="button"
+                                    id="prevBtn"
+                                    class="btn btn-outline-secondary"
+                                    onclick="nextPrev(-1)"
+                                  >
+                                    Previous
+                                  </button>
+                                  <button
+                                    type="button"
+                                    id="nextBtn"
+                                    class="btn btn-success"
+                                    onclick="nextPrev(1)"
+                                  >
+                                    Next
+                                  </button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                    <div class="row pt-2 pl-3 pr-3">
+                      <p class="prev text-dark"><span class="fa fa-long-arrow-left"> Go Back</span></p id="back">
                     </div>
                   </div>
                 </div>
@@ -994,15 +1104,14 @@
             </div>
           </div>
           <!-- end -->
-        </section>
-
-        <!-- footer content -->
+          <!-- footer content -->
         <footer>
           <div class="text-left vod-footer">
-            Copyright © 2020 Educate Myanmar. All rights reserved.
+            Copyright © <span class="text-success font-weight-bold">2020 Educate Myanmar.</span> All rights reserved.
           </div>
           <div class="clearfix"></div>
         </footer>
+        </section>
       </div>
     </div>
     <!-- jQuery -->

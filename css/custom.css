@@ -1306,7 +1306,7 @@
   border-bottom: 1px solid #d9dee4;
   width: 100%;
   position: relative;
-  padding: 5px 21px;
+  padding: 0px 21px;
 }
 
 .info-number .badge {
@@ -1896,6 +1896,7 @@ a:focus {
 
 .nav li li.current-page a {
   color: #fff;
+  padding-left: 30px;
 }
 
 .nav.side-menu > li.active > a {
@@ -2039,8 +2040,7 @@ a:focus {
 }
 
 footer {
-  background: #fff;
-  padding: 10px 30px;
+  padding-top: 15px;
   display: block;
   width: 100%;
 }
@@ -2980,12 +2980,6 @@ span.right {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-}
-
-@media (min-width: 992px) {
-  footer {
-    margin-right: 380px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -6379,7 +6373,7 @@ a:hover {
 }
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 5px;
 }
 
@@ -6388,12 +6382,12 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00b050;
+  background: #bfbfbf;
   border-radius: 9px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00b050;
+  background: #bfbfbf;
 }
 .custom-rounded {
   border-radius: 1rem !important;
@@ -6901,4 +6895,55 @@ input.invalid {
 .panel-title > a,
 .panel-title > a:hover {
   color: #fff !important;
+}
+.nav li .nav.child_menu a {
+  padding-left: 30px;
+}
+.nav li .nav.child_menu li::before {
+  content: "";
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  display: inline-block;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 25px;
+}
+.nav li .nav.child_menu ::after {
+  content: "";
+  width: 2px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  left: 7px;
+  top: 15px;
+  z-index: -1;
+}
+.nav li .nav.child_menu li.current-page::before {
+  background: #00b050;
+  font-family: FontAwesome;
+  content: "\f00c";
+  z-index: 9;
+}
+.nav li .nav.child_menu li.current-page::after {
+  background: #00b050;
+}
+.card1 h6.active a {
+  color: #00b050 !important;
+}
+/* masthead */
+.masthead {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
 }
