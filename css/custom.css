@@ -6948,7 +6948,7 @@ input.invalid {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   .right_col {
     margin-right: 260px !important;
   }
@@ -6965,7 +6965,14 @@ input.invalid {
     margin-right: 290px !important;
   }
 }
-
+@media (min-width: 1350px) {
+  .right_col {
+    margin-right: 340px !important;
+  }
+  .main_container .top_nav {
+    margin-right: 330px !important;
+  }
+}
 @media (min-width: 1440px) {
   .right_col {
     margin-right: 360px !important;
