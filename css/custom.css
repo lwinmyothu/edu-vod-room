@@ -6947,3 +6947,18 @@ input.invalid {
     padding-bottom: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .right_col {
+    margin-right: 260px !important;
+  }
+  .main_container .top_nav {
+    margin-right: 260px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .right_col {
+    margin-right: 360px !important;
+  }
+}
