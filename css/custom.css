@@ -6957,20 +6957,20 @@ input.invalid {
   }
 }
 
-@media (min-width: 1400px) {
-  .right_col {
-    margin-right: 360px !important;
-  }
-  .main_container .top_nav {
-    margin-right: 350px !important;
-  }
-}
-
 @media (min-width: 1200px) {
   .right_col {
     margin-right: 302px !important;
   }
   .main_container .top_nav {
     margin-right: 290px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .right_col {
+    margin-right: 360px !important;
+  }
+  .main_container .top_nav {
+    margin-right: 350px !important;
   }
 }
